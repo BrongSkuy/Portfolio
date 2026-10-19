@@ -35,7 +35,7 @@ Website portofolio ini menampilkan rekayasa sistem, proyek aplikasi nyata, serti
 - **WhatsApp:** [+62 858-8268-9121](https://wa.me/6285882689121)
 - **Email:** [faizrabbani179@gmail.com](mailto:faizrabbani179@gmail.com)
 - **Instagram:** [@faizrabbani_1](https://www.instagram.com/faizrabbani_1/)
-- **TikTok:** [@faizrabbani_1](https://www.tiktok.com/@faizrabbani_1)
+- **TikTok:** [@BrongSkuy](https://www.tiktok.com/@BrongSkuy)
 - **GitHub:** [@BrongSkuy](https://github.com/BrongSkuy)
 
 ---
