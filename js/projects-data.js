@@ -6,19 +6,80 @@
 const PORTFOLIO_DATA = {
   projects: [
     {
+      id: "dwitunggal-portal",
+      category: "web",
+      title: "Corporate Web Portal & P3MI System",
+      subtitle: "PT Dwi Tunggal Jaya Abadi & LPK Delta Abadi",
+      summary: "Website resmi multi-halaman berstandar korporat untuk perusahaan penempatan pekerja migran resmi SIP3MI Kemenaker RI & LPK Luar Negeri dengan optimasi SEO Schema.org dan integrasi WhatsApp.",
+      image: "assets/img/projects/dwitunggal_portal.webp",
+      liveUrl: "https://dwideltainternational.com",
+      tags: ["HTML5 Semantic", "Vanilla CSS3", "SEO Schema.org", "WhatsApp Gateway", "Multi-Page Portal", "Responsive Design"],
+      highlights: [
+        "Merancang dan mengembangkan website profil resmi perusahaan penempatan tenaga kerja luar negeri (Jepang, Taiwan, Turki, Polandia, dll.) dengan 10+ sub-halaman komprehensif.",
+        "Mengimplementasikan structured data JSON-LD (Schema.org) untuk memaksimalkan ranking SEO dan keterlihatan di Google Search.",
+        "Mengintegrasikan tombol floating action cepat yang terhubung langsung ke WhatsApp tim pendaftaran & konsultasi calon kandidat PMI."
+      ],
+      architecture: "HTML5 Semantic Architecture -> Custom Optimized CSS3 -> Schema.org JSON-LD Structured Data -> WhatsApp Direct API Relay."
+    },
+    {
       id: "danatowa",
       category: "ai",
       title: "DanaToWA - AI WhatsApp Automation",
       subtitle: "Bot Otomatisasi Transaksi & Notifikasi Pembayaran",
       summary: "Aplikasi otomatisasi bot WhatsApp yang terintegrasi dengan deteksi notifikasi pembayaran DANA secara real-time untuk mempercepat operasional UMKM.",
       image: "assets/img/projects/danatowa_screen.png",
-      tags: ["Android", "Kotlin", "Webhook", "WhatsApp API", "Stitch UI"],
+      tags: ["Android", "Kotlin", "Webhook", "WhatsApp API", "Stitch UI", "Automation"],
       highlights: [
         "Mendeteksi mutasi dan notifikasi pembayaran e-wallet DANA secara otomatis tanpa intervensi manual.",
         "Mengirim struk dan konfirmasi pesanan ke nomor pembeli WhatsApp secara instan (real-time webhook).",
         "Didesain dengan antarmuka modern elegan berbasis Stitch Kinetic Forge untuk kemudahan konfigurasi pedagang."
       ],
       architecture: "Notification Listener Service (Android) -> Webhook Relay Dispatcher -> WhatsApp Automation Engine -> Struk Digital Generator."
+    },
+    {
+      id: "delta-abadi-platform",
+      category: "web",
+      title: "Enterprise LPK Candidate Management",
+      subtitle: "LPK Delta Abadi International",
+      summary: "Platform manajemen kandidat magang luar negeri terintegrasi berbasis Next.js 16 (App Router), React 19, Express 5, dan Prisma ORM dengan verifikasi dokumen paspor/visa/sertifikat.",
+      image: "assets/img/projects/lpk_platform.jpg",
+      tags: ["Next.js 16", "React 19", "Express 5", "Prisma ORM", "Tailwind CSS v4", "Docker", "Redux Toolkit"],
+      highlights: [
+        "Membangun arsitektur full-stack modern dengan pemisahan frontend Next.js 16 App Router dan backend RESTful API Express 5.",
+        "Mendesain sistem pelacakan dokumen kandidat (Paspor, Visa, Sertifikat N4/N5 bahasa Jepang) dengan validasi schema Zod.",
+        "Menyediakan dashboard interaktif analitik pendaftaran dan kehadiran pelatihan menggunakan Recharts dan Redux Toolkit."
+      ],
+      architecture: "Next.js 16 (App Router) + Tailwind CSS v4 -> Express 5 API Service + JWT Auth -> Prisma ORM -> PostgreSQL / Cloudinary Storage."
+    },
+    {
+      id: "dwitunggal-cv",
+      category: "web",
+      title: "LPK CV Builder & Career Hub",
+      subtitle: "PT Dwi Tunggal Jaya Abadi",
+      summary: "Aplikasi web modern berbasis React 19 & Neon Serverless PostgreSQL untuk pembuatan CV dwibahasa (Indonesia & Jepang) peserta pemagangan.",
+      image: "assets/img/projects/dwitunggal_logo.png",
+      tags: ["React 19", "TypeScript", "Tailwind CSS", "Framer Motion", "Neon PostgreSQL", "Docx Engine"],
+      highlights: [
+        "Aplikasi enterprise production-ready dengan arsitektur modern TypeScript & React 19.",
+        "Engine export dokumen otomatis multi-format: DOCX standar Jepang, ExcelJS, dan PDF.",
+        "Database cloud serverless berkecepatan tinggi menggunakan Neon Database (PostgreSQL) terintegrasi Vercel."
+      ],
+      architecture: "React 19 + Vite 6 -> Tailwind CSS v4 + Framer Motion -> Neon Serverless PostgreSQL -> Docx/Excel Templater Engine."
+    },
+    {
+      id: "iot-pet-feeder",
+      category: "iot",
+      title: "Smart Automated Pet Feeder with Telegram Bot",
+      subtitle: "ESP32 Embedded IoT Automation System",
+      summary: "Sistem dispenser pakan hewan otomatis berbasis mikrokontroler ESP32 terintegrasi Telegram Bot API, sensor jarak ultrasonik HC-SR04 untuk monitoring sisa pakan, dan sensor inframerah.",
+      image: "assets/img/projects/iot_pet_feeder.jpg",
+      tags: ["ESP32", "Arduino C++", "Telegram Bot API", "HC-SR04", "IR Sensor", "Servo Motor", "IoT"],
+      highlights: [
+        "Kontrol pakan jarak jauh melalui pesan chat Telegram Bot (/feed untuk manual, /status untuk cek kondisi pakan dan sensor alat).",
+        "Sensor ultrasonik HC-SR04 memantau sisa volume wadah pakan dan mengirim notifikasi otomatis ke smartphone saat stok menipis.",
+        "Mekanisme motor servo presisi dengan proteksi jeda makan otomatis untuk memastikan kuantitas porsi pakan yang akurat."
+      ],
+      architecture: "ESP32 WiFi Microcontroller -> UniversalTelegramBot Client -> HC-SR04 & IR Sensor Reading -> Servo Dispenser Actuator."
     },
     {
       id: "smk-absensi",
@@ -36,19 +97,34 @@ const PORTFOLIO_DATA = {
       architecture: "Antigravity IDE Vibe Coding -> Web Application Interface -> Database Absensi & Penilaian -> BNI Virtual Account Data Bridge."
     },
     {
-      id: "dwitunggal-cv",
+      id: "bank-sampah",
       category: "web",
-      title: "LPK CV Builder & Career Hub",
-      subtitle: "PT Dwi Tunggal Jaya Abadi",
-      summary: "Aplikasi web modern berbasis React 19 & Neon Serverless PostgreSQL untuk pembuatan CV dwibahasa (Indonesia & Jepang) peserta pemagangan.",
-      image: "assets/img/projects/dwitunggal_logo.png",
-      tags: ["React 19", "TypeScript", "Tailwind CSS", "Framer Motion", "Neon PostgreSQL"],
+      title: "Bank Sampah Indonesia Web Platform",
+      subtitle: "Sistem Manajemen Sampah & Reward Digital",
+      summary: "Aplikasi web pengelolaan sampah digital terpadu dengan kalkulator timbangan dinamis, tracking poin nasabah, katalog penukaran reward, dan buku besar transaksi keuangan.",
+      image: "assets/img/projects/bank_sampah.jpg",
+      tags: ["PHP MVC", "MySQL", "Chart.js", "Bootstrap 5", "Financial Ledger", "Dynamic Calculator"],
       highlights: [
-        "Aplikasi enterprise production-ready dengan arsitektur modern TypeScript & React 19.",
-        "Engine export dokumen otomatis multi-format: DOCX standar Jepang, ExcelJS, dan PDF.",
-        "Database cloud serverless berkecepatan tinggi menggunakan Neon Database (PostgreSQL) terintegrasi Vercel."
+        "Kalkulator dinamis untuk penghitungan otomatis konversi berat sampah ke nilai rupiah dan perolehan poin nasabah secara instan.",
+        "Dashboard member interaktif menampilkan grafik perkembangan setoran sampah dan saldo tabungan nasabah secara visual.",
+        "Modul penukaran reward (sembako, voucher belanja, saldo tunai) serta panel admin untuk audit buku besar setoran sampah."
       ],
-      architecture: "React 19 + Vite 6 -> Tailwind CSS v4 + Framer Motion -> Neon Serverless PostgreSQL -> Docx/Excel Templater Engine."
+      architecture: "PHP MVC Architecture -> MySQL Relational Database -> Chart.js Visualizer Engine -> Points & Cashout Transaction Ledger."
+    },
+    {
+      id: "nlp-sentiment-analysis",
+      category: "ai",
+      title: "NLP Sentiment Analysis on App Reviews",
+      subtitle: "Data Science & Machine Learning Pipeline",
+      summary: "Pipeline pengolahan bahasa alami (NLP) untuk menganalisis sentimen ribuan ulasan aplikasi Google Play Store menggunakan Python, TF-IDF, dan pemodelan klasifikasi Machine Learning.",
+      image: "assets/img/projects/nlp_sentiment.jpg",
+      tags: ["Python", "NLP", "Scikit-Learn", "NLTK", "TF-IDF", "Data Science", "Machine Learning"],
+      highlights: [
+        "Pipeline text preprocessing komprehensif bahasa Indonesia (case folding, tokenization, stopword removal, dan stemming Sastrawi).",
+        "Ekstraksi fitur kata kunci dominan dengan Term Frequency-Inverse Document Frequency (TF-IDF).",
+        "Evaluasi model klasifikasi machine learning dengan akurasi 94.2% serta visualisasi Confusion Matrix dan Word Cloud sentimen."
+      ],
+      architecture: "Google Play Scraper -> NLP Text Preprocessing (Sastrawi/NLTK) -> TF-IDF Vectorizer -> ML Classification Model -> Sentiment Insight Dashboard."
     },
     {
       id: "kopi-kenangan",
