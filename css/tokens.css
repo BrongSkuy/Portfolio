@@ -1,0 +1,102 @@
+/* ==========================================================================
+   CLAUDE AI INSPIRED DESIGN TOKENS
+   Portfolio Muhammad Faiz Rabbani - Warm Stone, Editorial & Terracotta
+   ========================================================================== */
+
+:root {
+  /* Surface & Background (Warm Non-Glare Ivory / Parchment) */
+  --bg: #FAF7F2;
+  --bg-translucent: rgba(250, 247, 242, 0.92);
+  --bg-subtle: #F3EFE8;
+  --surface: #FFFFFF;
+  --surface-raised: #FAF8F5;
+  --surface-hover: #F5F1E9;
+  --border: #E5DFD5;
+  --border-subtle: rgba(45, 38, 30, 0.08);
+  --border-focus: #C96442;
+  
+  /* Brand Identifiers (Claude AI Signature Warm Terracotta & Deep Charcoal) */
+  --brand-terracotta: #C96442;
+  --brand-terracotta-dark: #B35334;
+  --brand-terracotta-light: #F7EBE6;
+  --brand-charcoal: #1F1E1B;
+  --brand-stone: #EFECE6;
+
+  /* Claude AI Accent: Signature Terracotta / Burnt Clay */
+  --accent: #C96442;
+  --accent-hover: #B35334;
+  --accent-active: #9A4327;
+  --accent-subtle: rgba(201, 100, 66, 0.09);
+  --accent-border: rgba(201, 100, 66, 0.24);
+  --on-accent: #FFFFFF;
+
+  /* Primary Action (Deep Charcoal with Warm Ivory Label) */
+  --primary: #1F1E1B;
+  --primary-hover: #33312B;
+  --on-primary: #FAF7F2;
+
+  /* Technical Supporting Accent (Warm Slate / Sage) */
+  --info: #3E6B89;
+  --info-hover: #2C516A;
+  --info-bg: rgba(62, 107, 137, 0.08);
+  --info-border: rgba(62, 107, 137, 0.22);
+
+  /* Status Colors (Refined & Humanist) */
+  --success: #2E7D52;
+  --success-bg: rgba(46, 125, 82, 0.08);
+  --error: #C53030;
+  --error-bg: rgba(197, 48, 48, 0.08);
+
+  /* Typography Colors (High-contrast, warm, zero eye fatigue) */
+  --text: #2B2823;
+  --text-heading: #141311;
+  --text-muted: #666157;
+  --text-dim: #8E887C;
+  --text-inverted: #FAF7F2;
+
+  /* Typography Font Families */
+  --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Spacing Scale (4px base) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* Border Radii (Refined, Modern Rounded Contours) */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* Natural Clean Drop Shadows (Warm, Soft Ambient) */
+  --shadow-sm: 0 1px 3px rgba(31, 28, 24, 0.04), 0 1px 2px rgba(31, 28, 24, 0.03);
+  --shadow-md: 0 4px 16px -2px rgba(31, 28, 24, 0.06), 0 2px 4px -1px rgba(31, 28, 24, 0.03);
+  --shadow-lg: 0 16px 36px -4px rgba(31, 28, 24, 0.08), 0 4px 12px -2px rgba(31, 28, 24, 0.04);
+
+  /* Motion & Transitions */
+  --dur-fast: 150ms;
+  --dur-base: 220ms;
+  --dur-slow: 350ms;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout Constrains */
+  --container-max: 1180px;
+  --container-narrow: 840px;
+  --header-height: 68px;
+}

@@ -1,0 +1,612 @@
+/* ==========================================================================
+   CLAUDE AI INSPIRED - REUSABLE COMPONENTS
+   Portfolio Muhammad Faiz Rabbani - Warm Stone, Terracotta & Editorial
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Section Marker (Minimalist, Editorial, Terracotta)
+   -------------------------------------------------------------------------- */
+.section-marker {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-3);
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+}
+
+.section-marker-number {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 3.4vw, 2.75rem);
+  font-weight: 600;
+  margin-bottom: var(--space-3);
+  letter-spacing: -0.02em;
+  color: var(--text-heading);
+  line-height: 1.2;
+}
+
+.section-desc {
+  font-size: 1.0625rem;
+  max-width: 620px;
+  color: var(--text-muted);
+  margin-bottom: var(--space-12);
+  line-height: 1.7;
+}
+
+/* --------------------------------------------------------------------------
+   Header / Navigation Bar (Warm Translucent Glass Pill)
+   -------------------------------------------------------------------------- */
+.site-header {
+  position: fixed;
+  top: 16px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 0 var(--space-4);
+  pointer-events: none;
+}
+
+.nav-container {
+  pointer-events: auto;
+  width: 100%;
+  max-width: 1000px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-6);
+  box-shadow: 0 4px 20px rgba(31, 28, 24, 0.05);
+  transition: all var(--dur-base) var(--ease);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-heading);
+  text-decoration: none;
+}
+
+.nav-logo .dot {
+  color: var(--accent);
+  font-family: var(--font-sans);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  list-style: none;
+}
+
+.nav-link {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  position: relative;
+  padding: 6px 0;
+  transition: color var(--dur-fast) var(--ease);
+}
+
+.nav-link:hover {
+  color: var(--text-heading);
+}
+
+.nav-link.active {
+  color: var(--text-heading);
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent);
+  border-radius: var(--radius-full);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* Badge Open To Work (Clean, Humanist, Claude Subtle) */
+.badge-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  background: var(--success-bg);
+  border: 1px solid rgba(46, 125, 82, 0.25);
+  color: var(--success);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.badge-dot-pulse {
+  width: 6px;
+  height: 6px;
+  background-color: var(--success);
+  border-radius: 50%;
+}
+
+/* Hamburger for Mobile */
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--text-heading);
+  cursor: pointer;
+  padding: 6px;
+}
+
+/* Mobile Menu hidden by default on desktop */
+.mobile-menu {
+  display: none;
+}
+
+/* --------------------------------------------------------------------------
+   Buttons (Claude AI Style: Deep Charcoal Primary & Stone Secondary)
+   -------------------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--dur-fast) var(--ease);
+  user-select: none;
+  white-space: nowrap;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* Deep Charcoal Button with Warm Ivory Text */
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--on-primary);
+  border-color: var(--primary);
+  box-shadow: 0 1px 3px rgba(31, 28, 24, 0.12);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  color: var(--on-primary);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(31, 28, 24, 0.15);
+}
+
+.btn-secondary {
+  background-color: var(--surface);
+  border-color: var(--border);
+  color: var(--text-heading);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary:hover {
+  background-color: var(--surface-hover);
+  border-color: var(--border);
+  color: var(--text-heading);
+  transform: translateY(-1px);
+}
+
+.btn-outline-info {
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--text-heading);
+}
+
+.btn-outline-info:hover {
+  background: var(--surface-hover);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-muted);
+  padding: 8px 14px;
+}
+
+.btn-ghost:hover {
+  color: var(--text-heading);
+  background: var(--surface-hover);
+}
+
+.btn-sm {
+  padding: 6px 14px;
+  font-size: 0.8125rem;
+}
+
+.btn-icon {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border-radius: var(--radius-md);
+}
+
+/* --------------------------------------------------------------------------
+   Dropdown Menu (Download CV)
+   -------------------------------------------------------------------------- */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 220px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: all var(--dur-base) var(--ease);
+  z-index: 100;
+}
+
+.dropdown.open .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 9px 12px;
+  color: var(--text);
+  font-size: 0.8125rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: background var(--dur-fast) var(--ease);
+}
+
+.dropdown-item:hover {
+  background: var(--surface-hover);
+  color: var(--text-heading);
+}
+
+.dropdown-item small {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+/* --------------------------------------------------------------------------
+   Chips & Tags (Claude AI Terracotta & Stone Pill Badges)
+   -------------------------------------------------------------------------- */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.02em;
+}
+
+.tag-info {
+  background: var(--info-bg);
+  border: 1px solid var(--info-border);
+  color: var(--info);
+}
+
+.tag-accent {
+  background: var(--accent-subtle);
+  border: 1px solid var(--accent-border);
+  color: var(--accent);
+}
+
+.tag-ghost {
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   Cards
+   -------------------------------------------------------------------------- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--dur-base) var(--ease), 
+              border-color var(--dur-base) var(--ease),
+              box-shadow var(--dur-base) var(--ease);
+}
+
+.card-interactive:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-border);
+  box-shadow: var(--shadow-md);
+}
+
+/* --------------------------------------------------------------------------
+   Realistic Browser Window Frame for Screenshots
+   -------------------------------------------------------------------------- */
+.browser-window {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.browser-bar {
+  height: 32px;
+  background: var(--surface-raised);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 8px;
+}
+
+.browser-dots {
+  display: flex;
+  gap: 5px;
+}
+
+.browser-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.browser-dot.red { background: #D97757; opacity: 0.8; }
+.browser-dot.yellow { background: #D9A05B; opacity: 0.8; }
+.browser-dot.green { background: #6BA875; opacity: 0.8; }
+
+.browser-address {
+  margin-left: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xs);
+  padding: 2px 10px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  max-width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.browser-content {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background: var(--surface-raised);
+}
+
+.browser-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--dur-slow) var(--ease);
+}
+
+.project-card:hover .browser-content img {
+  transform: scale(1.02);
+}
+
+/* --------------------------------------------------------------------------
+   Executive Terminal / Architecture Card (Hero Feature)
+   -------------------------------------------------------------------------- */
+.prompt-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+.prompt-card-header {
+  background: var(--surface-raised);
+  border-bottom: 1px solid var(--border);
+  padding: 9px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prompt-badge {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.6875rem;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.prompt-card-body {
+  padding: 16px 18px;
+  color: var(--text-muted);
+}
+
+.prompt-line {
+  margin-bottom: 5px;
+}
+
+.prompt-line.command {
+  color: var(--text-heading);
+  font-weight: 600;
+}
+
+.prompt-line.highlight {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.prompt-line.comment {
+  color: var(--text-dim);
+}
+
+/* --------------------------------------------------------------------------
+   Modal Dialog
+   -------------------------------------------------------------------------- */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(31, 28, 24, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--dur-base) var(--ease);
+}
+
+.modal-backdrop.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-dialog {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  width: 100%;
+  max-width: 840px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+  transform: scale(0.97) translateY(8px);
+  transition: all var(--dur-base) var(--ease);
+  position: relative;
+}
+
+.modal-backdrop.open .modal-dialog {
+  transform: scale(1) translateY(0);
+}
+
+.modal-header {
+  padding: var(--space-6) var(--space-6) var(--space-4);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-close {
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.modal-close:hover {
+  color: var(--text-heading);
+  border-color: var(--border);
+  background: var(--surface-hover);
+}
+
+.modal-body {
+  padding: var(--space-6);
+}
+
+/* --------------------------------------------------------------------------
+   Toast Notification
+   -------------------------------------------------------------------------- */
+.toast-container {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3000;
+  pointer-events: none;
+}
+
+.toast {
+  pointer-events: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  padding: 10px 18px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 0.8125rem;
+  color: var(--text-heading);
+  opacity: 0;
+  transform: translateY(12px);
+  transition: all var(--dur-base) var(--ease);
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}

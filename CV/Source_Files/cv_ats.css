@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 10pt;
+    line-height: 1.35;
+    color: #000;
+    background-color: #fff;
+    max-width: 210mm;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.header h1 {
+    font-size: 19pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    letter-spacing: 0.5px;
+}
+
+.contact-info {
+    font-size: 9.5pt;
+}
+
+.contact-info a {
+    color: #000;
+    text-decoration: none;
+}
+
+section {
+    margin-bottom: 11px;
+}
+
+h2.section-title {
+    font-size: 10.5pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+    margin-bottom: 6px;
+    padding-bottom: 1px;
+}
+
+.entry {
+    margin-bottom: 8px;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 1px;
+    font-size: 10pt;
+}
+
+.entry-subheader {
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+    margin-bottom: 3px;
+    font-size: 9.5pt;
+}
+
+p.summary-text {
+    margin-bottom: 6px;
+    text-align: justify;
+}
+
+ul {
+    padding-left: 18px;
+    margin-bottom: 3px;
+}
+
+li {
+    margin-bottom: 2px;
+    text-align: left;
+}
+
+.skills-list p {
+    margin-bottom: 3px;
+    text-align: left;
+}

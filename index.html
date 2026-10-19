@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Faiz Rabbani — AI Prompt Engineer & Vibe Coder</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portofolio resmi Muhammad Faiz Rabbani - AI Prompt Engineer, Vibe Coder & Full-Stack Web Developer. Mahasiswa Teknik Informatika UNPAM dengan spesialisasi AI-assisted development.">
+  <meta name="keywords" content="Muhammad Faiz Rabbani, AI Prompt Engineer, Vibe Coding, Antigravity IDE, Full-Stack Developer, Portofolio Web, UNPAM">
+  <meta name="author" content="Muhammad Faiz Rabbani">
+  
+  <!-- Google Fonts: Newsreader (Editorial Serif), Plus Jakarta Sans (Humanist UI), JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheets (Navy Forge Architecture) -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Langsung ke Konten Utama</a>
+
+  <!-- ======================================================================
+       HEADER / NAVIGATION
+       ====================================================================== -->
+  <header class="site-header">
+    <nav class="nav-container" aria-label="Navigasi Utama">
+      <a href="#hero" class="nav-logo">
+        MFR<span class="dot">.</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">Tentang</a></li>
+        <li><a href="#projects" class="nav-link">Proyek</a></li>
+        <li><a href="#skills" class="nav-link">Keahlian</a></li>
+        <li><a href="#certificates" class="nav-link">Sertifikat</a></li>
+        <li><a href="#experience" class="nav-link">Perjalanan</a></li>
+        <li><a href="#contact" class="nav-link">Kontak</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <span class="badge-status">
+          <span class="badge-dot-pulse"></span>
+          OPEN TO WORK
+        </span>
+
+        <!-- CV Dropdown Button -->
+        <div class="dropdown" id="cvDropdown">
+          <button class="btn btn-outline-info btn-sm" id="cvDropdownBtn" aria-haspopup="true" aria-expanded="false">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Unduh CV
+          </button>
+          <div class="dropdown-menu" role="menu">
+            <a href="assets/docs/CV_Muhammad_Faiz_Rabbani_ATS.pdf" target="_blank" download class="dropdown-item" role="menuitem">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              <div>
+                <strong>Format ATS (Standar)</strong>
+                <small>PDF Ramah Sistem Rekrutmen</small>
+              </div>
+            </a>
+            <a href="assets/docs/CV_Muhammad_Faiz_Rabbani_Visual.pdf" target="_blank" download class="dropdown-item" role="menuitem">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+              <div>
+                <strong>Format Visual (Desain)</strong>
+                <small>PDF Tata Letak Grafis</small>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hamburger Button -->
+        <button class="nav-toggle" id="navToggle" aria-label="Buka Menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-nav-links">
+      <li><a href="#about" class="mobile-nav-link">01 / Tentang</a></li>
+      <li><a href="#projects" class="mobile-nav-link">02 / Proyek</a></li>
+      <li><a href="#skills" class="mobile-nav-link">03 / Keahlian</a></li>
+      <li><a href="#certificates" class="mobile-nav-link">04 / Sertifikat</a></li>
+      <li><a href="#experience" class="mobile-nav-link">05 / Perjalanan</a></li>
+      <li><a href="#contact" class="mobile-nav-link">06 / Kontak</a></li>
+    </ul>
+
+    <div style="display: flex; flex-direction: column; gap: 12px;">
+      <a href="assets/docs/CV_Muhammad_Faiz_Rabbani_ATS.pdf" target="_blank" class="btn btn-primary" download>Unduh CV ATS (PDF)</a>
+      <a href="https://wa.me/6285882689121" target="_blank" class="btn btn-secondary">WhatsApp Saya</a>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MAIN CONTENT
+       ====================================================================== -->
+  <main id="main-content">
+    
+    <!-- --------------------------------------------------------------------
+         HERO SECTION
+         -------------------------------------------------------------------- -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <span class="hero-greeting"><span class="section-marker-number">PORTOFOLIO</span> / REKAYASA SISTEM & AI</span>
+            <h1 class="hero-name">Muhammad Faiz Rabbani</h1>
+            
+            <div class="hero-roles">
+              <span class="tag tag-accent">AI PROMPT ENGINEER</span>
+              <span class="tag tag-info">VIBE CODER</span>
+              <span class="tag tag-ghost">FULL-STACK WEB DEV</span>
+            </div>
+
+            <p class="hero-bio">
+              Mahasiswa Teknik Informatika tingkat akhir (IPK 3.7) di Universitas Pamulang. Mengakselerasi pembangunan aplikasi digital secara presisi dan <em>end-to-end</em> menggunakan kekuatan <strong>AI Prompt Engineering</strong> dan pendekatan <strong>Vibe Coding</strong> dengan Antigravity IDE.
+            </p>
+
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">
+                Jelajahi Proyek
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="https://wa.me/6285882689121?text=Halo%20Muhammad%20Faiz%20Rabbani,%20saya%20melihat%20portofolio%20Anda%20dan%20tertarik%20untuk%20berdiskusi." target="_blank" class="btn btn-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                WhatsApp Langsung
+              </a>
+            </div>
+
+            <!-- Social Media Chips -->
+            <div class="hero-social-links">
+              <a href="https://www.instagram.com/faizrabbani_1/" target="_blank" rel="noopener noreferrer" class="hero-social-btn" aria-label="Instagram Muhammad Faiz Rabbani">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                @faizrabbani_1
+              </a>
+              <a href="https://www.tiktok.com/@faizrabbani_1" target="_blank" rel="noopener noreferrer" class="hero-social-btn" aria-label="TikTok Muhammad Faiz Rabbani">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.86 4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-.04-4.52z"/></svg>
+                TikTok
+              </a>
+              <a href="https://github.com/BrongSkuy" target="_blank" rel="noopener noreferrer" class="hero-social-btn" aria-label="GitHub Muhammad Faiz Rabbani">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Media (Clean Portrait + Architecture Summary) -->
+          <div class="hero-visual">
+            <div class="hero-photo-container">
+              <img src="assets/img/profile/foto_profil.jpg" alt="Muhammad Faiz Rabbani" class="hero-photo">
+            </div>
+
+            <div class="hero-prompt-wrapper">
+              <div class="prompt-card">
+                <div class="prompt-card-header">
+                  <div class="browser-dots">
+                    <span class="browser-dot red"></span>
+                    <span class="browser-dot yellow"></span>
+                    <span class="browser-dot green"></span>
+                  </div>
+                  <span class="prompt-badge">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                    ALUR KERJA VIBE CODING
+                  </span>
+                </div>
+                <div class="prompt-card-body">
+                  <div class="prompt-line comment">// Penerjemahan Logika Bisnis & Integrasi Webhook</div>
+                  <div class="prompt-line command">$ antigravity forge --target "UMKM Payment Automation"</div>
+                  <div class="prompt-line">> Integrasi Notification Listener Android ke WhatsApp API...</div>
+                  <div class="prompt-line highlight">> Status Operasional: Teruji & Siap Produksi [100%]</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Metrics Counter Strip -->
+        <div class="stat-strip">
+          <div class="stat-item">
+            <span class="stat-number" data-target="3.7" data-decimal="true">0.0</span>
+            <span class="stat-label">IPK Terkini (UNPAM)</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="5" data-suffix="+">0</span>
+            <span class="stat-label">Proyek Teruji & Berjalan</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="8" data-suffix="+">0</span>
+            <span class="stat-label">Sertifikat Nasional AI & TI</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="100" data-suffix="%">0</span>
+            <span class="stat-label">Akurasi Logika Bisnis</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         ABOUT SECTION
+         -------------------------------------------------------------------- -->
+    <section id="about">
+      <div class="container">
+        <div class="section-marker"><span class="section-marker-number">01</span> / TENTANG SAYA</div>
+        <h2 class="section-title">Menggabungkan Presisi Logika & Kecepatan AI</h2>
+        <p class="section-desc">Membangun perangkat lunak bukan hanya soal mengetik sintaks, melainkan bagaimana menerjemahkan kebutuhan bisnis menjadi solusi digital yang kokoh dan tepat sasaran.</p>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Halo! Saya <strong>Muhammad Faiz Rabbani</strong>, mahasiswa Teknik Informatika semester akhir di Universitas Pamulang (IPK 3.7). Saya berfokus pada spesialisasi <strong>AI Prompt Engineering</strong> dan <strong>Vibe Coding</strong>.
+            </p>
+            <p>
+              Di era revolusi kecerdasan buatan, saya memanfaatkan tools mutakhir seperti <strong>Antigravity IDE</strong> untuk merancang arsitektur, mengeksekusi integrasi webhook, dan menyelesaikan siklus pembuatan aplikasi <em>end-to-end</em> dalam waktu yang jauh lebih cepat dibanding metode konvensional.
+            </p>
+            <p>
+              Didukung ketelitian tinggi dan kemampuan analisis logika data (Microsoft Excel, Pivot Table, dan relasi database), saya siap membantu instansi, sekolah, maupun UMKM untuk bertransformasi ke ekosistem digital yang efisien dan minim kendala.
+            </p>
+          </div>
+
+          <div class="value-cards">
+            <div class="value-card">
+              <div class="value-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              </div>
+              <div class="value-content">
+                <h3>Kecepatan Vibe Coding</h3>
+                <p>Mengembangkan prototipe hingga sistem fungsional secara kilat menggunakan alur kerja AI-assisted development terstruktur.</p>
+              </div>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </div>
+              <div class="value-content">
+                <h3>Instruksi AI yang Presisi</h3>
+                <p>Keahlian merumuskan prompt berbasis konteks sistemik sehingga menghasilkan kode bersih, modular, dan minim bug.</p>
+              </div>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+              </div>
+              <div class="value-content">
+                <h3>Pengolahan Data & Logika Bisnis</h3>
+                <p>Kemampuan analisis data presisi menggunakan Excel, visualisasi, dan pemetaan alur sistem yang transparan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         PROJECTS SECTION
+         -------------------------------------------------------------------- -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-marker"><span class="section-marker-number">02</span> / PROYEK & KARYA</div>
+        <h2 class="section-title">Solusi Nyata yang Dibangun & Teruji</h2>
+        <p class="section-desc">Koleksi aplikasi otomatisasi, sistem informasi institusi, dan web platform yang telah saya kembangkan.</p>
+
+        <!-- Category Filters -->
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all">Semua Proyek</button>
+          <button class="filter-btn" data-filter="ai">AI & Otomasi</button>
+          <button class="filter-btn" data-filter="web">Sistem Web</button>
+          <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+        </div>
+
+        <!-- Dynamic Grid Container -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Rendered dynamically by js/app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SKILLS MATRIX SECTION
+         -------------------------------------------------------------------- -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-marker"><span class="section-marker-number">03</span> / KOMPETENSI TEKNIS</div>
+        <h2 class="section-title">Keahlian & Teknologi yang Dikuasai</h2>
+        <p class="section-desc">Kombinasi AI engineering modern, fondasi pengembangan web, dan analisis logika data bisnis.</p>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: AI & Prompting -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path><path d="M12 6v6l4 2"></path></svg>
+              </div>
+              <h3 class="skill-cat-title">AI & Prompt Engineering</h3>
+            </div>
+            <p style="font-size: 0.875rem; color: var(--text-muted);">Spesialisasi utama dalam mengarahkan AI untuk otomasi dan akselerasi pengembangan software.</p>
+            <div class="skill-items-list">
+              <span class="skill-badge core">Antigravity IDE</span>
+              <span class="skill-badge core">AI Prompt Engineering</span>
+              <span class="skill-badge core">Vibe Coding</span>
+              <span class="skill-badge">LLM Context Structuring</span>
+              <span class="skill-badge">AI-Assisted Debugging</span>
+              <span class="skill-badge">No-Code / Low-Code</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Frontend & Web -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3 class="skill-cat-title">Modern Web Development</h3>
+            </div>
+            <p style="font-size: 0.875rem; color: var(--text-muted);">Membangun antarmuka web interaktif, responsif, dan berperforma tinggi.</p>
+            <div class="skill-items-list">
+              <span class="skill-badge core">React 19</span>
+              <span class="skill-badge core">TypeScript</span>
+              <span class="skill-badge core">Tailwind CSS</span>
+              <span class="skill-badge">Alpine.js</span>
+              <span class="skill-badge">HTML5 / Semantic CSS3</span>
+              <span class="skill-badge">Framer Motion</span>
+              <span class="skill-badge">Bootstrap 5</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Backend & Database -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <h3 class="skill-cat-title">Backend, Database & Cloud</h3>
+            </div>
+            <p style="font-size: 0.875rem; color: var(--text-muted);">Integrasi layanan data cloud, webhook, dan ekosistem otomasi.</p>
+            <div class="skill-items-list">
+              <span class="skill-badge core">Neon Serverless PostgreSQL</span>
+              <span class="skill-badge">Node.js</span>
+              <span class="skill-badge">Webhooks Relay</span>
+              <span class="skill-badge">RESTful APIs</span>
+              <span class="skill-badge">Android Studio / Automation</span>
+              <span class="skill-badge">Vercel Deployment</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Data & Business Logic -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              </div>
+              <h3 class="skill-cat-title">Logika Data & Administrasi</h3>
+            </div>
+            <p style="font-size: 0.875rem; color: var(--text-muted);">Ketelitian pemrosesan data, pembersihan data, dan penyusunan visualisasi bisnis.</p>
+            <div class="skill-items-list">
+              <span class="skill-badge core">Microsoft Excel (Pivot Table)</span>
+              <span class="skill-badge core">Data Visualization</span>
+              <span class="skill-badge">Data Cleansing</span>
+              <span class="skill-badge">Formula Logika Lanjutan</span>
+              <span class="skill-badge">Git & GitHub</span>
+              <span class="skill-badge">SPSS Statistics</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         CERTIFICATES SECTION
+         -------------------------------------------------------------------- -->
+    <section id="certificates">
+      <div class="container">
+        <div class="section-marker"><span class="section-marker-number">04</span> / KREDENSIAL & SERTIFIKASI</div>
+        <h2 class="section-title">Sertifikasi & Pelatihan Resmi</h2>
+        <p class="section-desc">Bukti kompetensi dan komitmen pengembangan diri di bidang Artificial Intelligence, Pemrograman Web, dan Bahasa.</p>
+
+        <div class="certs-grid" id="certsGrid">
+          <!-- Rendered dynamically by js/app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         TIMELINE SECTION (Education & Experience)
+         -------------------------------------------------------------------- -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-marker"><span class="section-marker-number">05</span> / PERJALANAN & REKAM JEJAK</div>
+        <h2 class="section-title">Pendidikan & Pengalaman Nyata</h2>
+        <p class="section-desc">Jejak langkah akademis, kepemimpinan organisasi, dan kontribusi proyek lepas.</p>
+
+        <div class="timeline-container">
+          
+          <!-- Education Column -->
+          <div class="timeline-column">
+            <h3>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent);"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              Riwayat Pendidikan
+            </h3>
+            
+            <div class="timeline-items">
+              <div class="timeline-item">
+                <div class="timeline-node"></div>
+                <div class="timeline-date">2023 - SEKARANG (SEMESTER 7)</div>
+                <h4 class="timeline-title">Universitas Pamulang</h4>
+                <div class="timeline-subtitle">S1 Teknik Informatika | IPK 3.7 / 4.0</div>
+                <p class="timeline-desc">
+                  Mendalami arsitektur perangkat lunak, sistem basis data, dan kecerdasan buatan. Aktif mengikuti seminar nasional AI dan pengembangan teknologi web.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-node"></div>
+                <div class="timeline-date">2021 - 2023</div>
+                <h4 class="timeline-title">SMAIT Alia Tangerang</h4>
+                <div class="timeline-subtitle">Jurusan IPA / IPS | Lulus</div>
+                <p class="timeline-desc">
+                  Fokus pada pembentukan karakter disiplin, logika sains, dan kepemimpinan melalui organisasi kesiswaan tingkat sekolah.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Column -->
+          <div class="timeline-column">
+            <h3>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--info);"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              Pengalaman & Kepemimpinan
+            </h3>
+
+            <div class="timeline-items">
+              <div class="timeline-item">
+                <div class="timeline-node"></div>
+                <div class="timeline-date">2024</div>
+                <h4 class="timeline-title">Ketua Organisasi Remaja Cluster</h4>
+                <div class="timeline-subtitle">Kepemimpinan Komunitas & Program Kerja</div>
+                <p class="timeline-desc">
+                  Memimpin dan mengoordinasikan seluruh agenda kegiatan remaja di lingkungan klaster perumahan serta bertanggung jawab atas anggaran dan pelaksanaan program kerja.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-node"></div>
+                <div class="timeline-date">2023 - 2024</div>
+                <h4 class="timeline-title">AI-Assisted Web Developer</h4>
+                <div class="timeline-subtitle">SMK Penerbangan Dirghantara & UMKM</div>
+                <p class="timeline-desc">
+                  Membangun sistem informasi absensi dan evaluasi siswa berbasis web, otomasi rekapitulasi data VA BNI, serta otomasi bot pembayaran WhatsApp untuk mitra UMKM.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-node"></div>
+                <div class="timeline-date">2021 - 2023</div>
+                <h4 class="timeline-title">Pengurus OSIS</h4>
+                <div class="timeline-subtitle">SMAIT Alia Tangerang</div>
+                <p class="timeline-desc">
+                  Terlibat aktif dalam perancangan, koordinasi logistik, dan eksekusi berbagai acara kepengurusan OSIS tingkat sekolah.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         CONTACT SECTION
+         -------------------------------------------------------------------- -->
+    <section id="contact">
+      <div class="container">
+        
+        <div class="contact-panel">
+          <div class="contact-info">
+            <div class="section-marker" style="margin-bottom: 8px;"><span class="section-marker-number">06</span> / HUBUNGI SAYA</div>
+            <h2>Mari Berkolaborasi!</h2>
+            <p>
+              Saya terbuka untuk peluang kerja (Full-Time / Contract), proyek freelance, maupun kolaborasi pengembangan solusi AI dan sistem web.
+            </p>
+
+            <div class="contact-links">
+              <!-- WhatsApp Direct -->
+              <a href="https://wa.me/6285882689121?text=Halo%20Muhammad%20Faiz%20Rabbani,%20saya%20tertarik%20dengan%20profil%20Anda." target="_blank" class="contact-link-item">
+                <div class="contact-link-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <small style="display: block; color: var(--text-dim); font-size: 0.75rem;">TELEPON / WHATSAPP</small>
+                  <strong>+62 858-8268-9121</strong>
+                </div>
+              </a>
+
+              <!-- Email Copy -->
+              <a href="#" id="copyEmailBtn" class="contact-link-item">
+                <div class="contact-link-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div style="flex: 1;">
+                  <small style="display: block; color: var(--text-dim); font-size: 0.75rem;">EMAIL (KLIK UNTUK SALIN)</small>
+                  <strong>faizrabbani179@gmail.com</strong>
+                </div>
+                <span class="tag tag-ghost" style="font-size: 0.6875rem;">SALIN</span>
+              </a>
+
+              <!-- Instagram Official -->
+              <a href="https://www.instagram.com/faizrabbani_1/" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="contact-link-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </div>
+                <div style="flex: 1;">
+                  <small style="display: block; color: var(--text-dim); font-size: 0.75rem;">INSTAGRAM RESMI</small>
+                  <strong>@faizrabbani_1</strong>
+                </div>
+                <span class="tag tag-accent" style="font-size: 0.6875rem;">IKUTI</span>
+              </a>
+
+              <!-- TikTok Official -->
+              <a href="https://www.tiktok.com/@faizrabbani_1" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="contact-link-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.86 4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-.04-4.52z"/></svg>
+                </div>
+                <div style="flex: 1;">
+                  <small style="display: block; color: var(--text-dim); font-size: 0.75rem;">TIKTOK KONTEN & TECH</small>
+                  <strong>@faizrabbani_1</strong>
+                </div>
+                <span class="tag tag-accent" style="font-size: 0.6875rem;">LIHAT</span>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/BrongSkuy" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="contact-link-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </div>
+                <div>
+                  <small style="display: block; color: var(--text-dim); font-size: 0.75rem;">GITHUB PROFILE</small>
+                  <strong>github.com/BrongSkuy</strong>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- WhatsApp Form Dispatcher -->
+          <form class="contact-form" id="contactForm">
+            <h3 style="font-size: 1.25rem; color: var(--text-heading); margin-bottom: 4px;">Kirim Pesan Cepat</h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: var(--space-2);">Pesan akan diformat otomatis dan diteruskan langsung ke WhatsApp saya.</p>
+
+            <div class="form-group">
+              <label for="senderName">Nama Lengkap *</label>
+              <input type="text" id="senderName" class="form-control" placeholder="Contoh: Budi Santoso" required>
+            </div>
+
+            <div class="form-group">
+              <label for="senderCompany">Perusahaan / Instansi (Opsional)</label>
+              <input type="text" id="senderCompany" class="form-control" placeholder="Contoh: PT Inovasi Digital">
+            </div>
+
+            <div class="form-group">
+              <label for="senderMessage">Pesan atau Kebutuhan Proyek *</label>
+              <textarea id="senderMessage" class="form-control" placeholder="Tuliskan pesan atau detail peluang kerja sama Anda..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="margin-top: 8px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              Kirim ke WhatsApp
+            </button>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-copy">
+        &copy; 2026 <strong>Muhammad Faiz Rabbani</strong>. Dirancang dengan presisi & AI-Assisted Vibe Coding.
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/BrongSkuy" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span style="color: var(--border);">•</span>
+        <a href="https://wa.me/6285882689121" target="_blank">WhatsApp</a>
+        <span style="color: var(--border);">•</span>
+        <a href="https://www.instagram.com/faizrabbani_1/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <span style="color: var(--border);">•</span>
+        <a href="https://www.tiktok.com/@faizrabbani_1" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <span style="color: var(--border);">•</span>
+        <a href="assets/docs/CV_Muhammad_Faiz_Rabbani_ATS.pdf" target="_blank" style="color: var(--accent); font-weight: 600;">Unduh CV</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       PROJECT DETAIL MODAL
+       ====================================================================== -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="section-marker" style="margin-bottom: 4px;">DETAIL ARSITEKTUR SISTEM</span>
+          <h3 id="modalTitle" style="font-size: 1.4rem; color: var(--text-heading); font-family: var(--font-display);">Judul Proyek</h3>
+        </div>
+        <button class="modal-close" id="modalClose" aria-label="Tutup Dialog Modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Feedback -->
+  <div class="toast-container">
+    <div class="toast" id="toast" role="status" aria-live="polite">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--success);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+      <span id="toastText">Email berhasil disalin!</span>
+    </div>
+  </div>
+
+  <!-- Application Logic -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

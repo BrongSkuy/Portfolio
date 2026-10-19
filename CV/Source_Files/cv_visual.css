@@ -1,0 +1,404 @@
+/* ==========================================================================
+   CV VISUAL - A4 (210mm x 297mm), single page
+   Palette: Navy #1a365d (brand CV) + Amber #f5b301 (accent, dipakai hemat)
+   ========================================================================== */
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background: #e5e7eb;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    color: #1f2937;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    display: flex;
+    justify-content: center;
+}
+
+@media print {
+    html, body { background: #fff; }
+}
+
+.cv-container {
+    width: 210mm;
+    height: 297mm;
+    display: flex;
+    background: #ffffff;
+    overflow: hidden;
+    position: relative;
+}
+
+/* ============================ SIDEBAR ============================ */
+.sidebar {
+    width: 72mm;
+    flex-shrink: 0;
+    background: #14294a;
+    color: #e8edf5;
+    padding: 11mm 7mm 8mm 8mm;
+    display: flex;
+    flex-direction: column;
+    gap: 5.2mm;
+    border-right: 1.2mm solid #f5b301;
+}
+
+.photo-wrap {
+    width: 38mm;
+    height: 38mm;
+    margin: 0 auto 1.5mm;
+    border-radius: 50%;
+    padding: 0.9mm;
+    background: #f5b301;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    background: #fff;
+}
+
+.side-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8.6pt;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-bottom: 1.6mm;
+    margin-bottom: 2.6mm;
+    border-bottom: 0.3mm solid rgba(255, 255, 255, 0.22);
+    position: relative;
+}
+
+.side-section h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.3mm;
+    width: 9mm;
+    height: 0.6mm;
+    background: #f5b301;
+}
+
+/* Contact */
+.contact-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4mm;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.4mm;
+    font-size: 8pt;
+    line-height: 1.35;
+    word-break: break-word;
+}
+
+.contact-list svg {
+    width: 3.8mm;
+    height: 3.8mm;
+    flex-shrink: 0;
+    margin-top: 0.2mm;
+    fill: none;
+    stroke: #f5b301;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Education */
+.edu-item {
+    margin-bottom: 3mm;
+}
+
+.edu-item:last-child {
+    margin-bottom: 0;
+}
+
+.edu-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8.8pt;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.6mm;
+}
+
+.edu-item p {
+    font-size: 8pt;
+    line-height: 1.4;
+    color: #d3dbe8;
+}
+
+.edu-item .muted {
+    color: #9fb0c8;
+    font-size: 7.6pt;
+}
+
+.edu-item .highlight {
+    display: inline-block;
+    margin-top: 1mm;
+    padding: 0.5mm 2mm;
+    background: rgba(245, 179, 1, 0.16);
+    color: #f8c63d;
+    font-weight: 600;
+    border-radius: 1mm;
+}
+
+/* Languages */
+.lang-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8mm;
+}
+
+.lang-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 8.2pt;
+}
+
+.dots {
+    display: inline-block;
+    width: 22mm;
+    height: 1.7mm;
+    border-radius: 1mm;
+    background: rgba(255, 255, 255, 0.16);
+    position: relative;
+    overflow: hidden;
+}
+
+.dots::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #f5b301;
+    border-radius: 1mm;
+}
+
+.d5::before { width: 100%; }
+.d4::before { width: 80%; }
+.d3::before { width: 60%; }
+.d2::before { width: 40%; }
+
+.lang-note {
+    margin-top: 2mm;
+    font-size: 6.8pt;
+    color: #9fb0c8;
+    line-height: 1.4;
+}
+
+/* Skill tags */
+.skill-tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6mm;
+}
+
+.skill-tags li {
+    font-size: 7.4pt;
+    font-weight: 500;
+    padding: 0.9mm 2.3mm;
+    border: 0.3mm solid rgba(255, 255, 255, 0.28);
+    border-radius: 5mm;
+    color: #eef2f8;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* ============================ MAIN ============================ */
+.content {
+    flex: 1;
+    padding: 11mm 10mm 8mm 9mm;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-block {
+    margin-bottom: 5.5mm;
+    padding-bottom: 4mm;
+    border-bottom: 0.4mm solid #e5e7eb;
+}
+
+.name-block h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26pt;
+    line-height: 1.08;
+    font-weight: 800;
+    color: #14294a;
+    letter-spacing: -0.01em;
+}
+
+.name-block .role {
+    margin-top: 2.6mm;
+    font-size: 8.8pt;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: #b7791f;
+    text-transform: uppercase;
+}
+
+.main-section {
+    margin-bottom: 5mm;
+}
+
+.main-section:last-child {
+    margin-bottom: 0;
+}
+
+.main-section > h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9.6pt;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #14294a;
+    margin-bottom: 2.6mm;
+    display: flex;
+    align-items: center;
+    gap: 2.4mm;
+}
+
+.main-section > h2::before {
+    content: '';
+    width: 1.6mm;
+    height: 4mm;
+    background: #f5b301;
+    border-radius: 0.5mm;
+}
+
+.main-section > h2::after {
+    content: '';
+    flex: 1;
+    height: 0.3mm;
+    background: #e5e7eb;
+}
+
+.main-section p,
+.main-section li {
+    font-size: 8.6pt;
+    line-height: 1.55;
+    color: #374151;
+}
+
+/* Experience entries */
+.entry {
+    margin-bottom: 3.6mm;
+}
+
+.entry:last-child {
+    margin-bottom: 0;
+}
+
+.entry-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3mm;
+}
+
+.entry-head h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9.8pt;
+    font-weight: 700;
+    color: #111827;
+}
+
+.badge {
+    font-size: 6.8pt;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.7mm 2.2mm;
+    border-radius: 5mm;
+    background: #fff6dd;
+    color: #8a5a00;
+    border: 0.25mm solid #f3d68a;
+    white-space: nowrap;
+}
+
+.entry-sub {
+    font-size: 8.4pt !important;
+    font-weight: 600;
+    color: #14294a !important;
+    margin: 0.6mm 0 1.4mm;
+}
+
+.entry ul {
+    padding-left: 4.2mm;
+}
+
+.entry li {
+    margin-bottom: 0.9mm;
+}
+
+.entry li::marker {
+    color: #f5b301;
+}
+
+/* Competency grid */
+.comp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3mm 5mm;
+}
+
+.comp-grid h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8.6pt;
+    font-weight: 700;
+    color: #14294a;
+    margin-bottom: 0.6mm;
+}
+
+.comp-grid p {
+    font-size: 8pt !important;
+    line-height: 1.45 !important;
+}
+
+/* Organization */
+.org-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.6mm;
+}
+
+.org-list strong {
+    font-size: 8.8pt;
+    color: #111827;
+    font-weight: 700;
+}
+
+.org-date {
+    font-size: 7.4pt;
+    font-weight: 600;
+    color: #b7791f;
+    margin-left: 1.5mm;
+}
+
+.org-list p {
+    margin-top: 0.6mm;
+    font-size: 8.2pt !important;
+    line-height: 1.5 !important;
+}
