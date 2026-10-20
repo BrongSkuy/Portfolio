@@ -12,8 +12,8 @@ Mahasiswa Teknik Informatika semester akhir (IPK 3.7) dengan spesialisasi di bid
 *PT Dwi Tunggal Jaya Abadi* | 2024
 - Menjalankan aktivitas pemasaran dan sosialisasi program penempatan pekerja migran resmi (P3MI) serta pelatihan luar negeri LPK.
 - Memberikan layanan konsultasi dan informasi alur pendaftaran kepada calon tenaga kerja/kandidat magang secara profesional.
-- Bertanggung jawab atas pengelolaan berkas administrasi kandidat, mulai dari verifikasi identitas, paspor, rekam medis, hingga dokumen legalitas.
-- Melakukan pendataan, pembukuan arsip, dan rekapitulasi laporan operasional harian secara akurat menggunakan Microsoft Excel.
+- Mengakselerasi penyusunan dan standardisasi ratusan CV kandidat ke format resmi kerja luar negeri dalam hitungan jam memanfaatkan integrasi AI.
+- Mengelola administrasi berkas, verifikasi dokumen legalitas kandidat, dan pelaporan operasional menggunakan Microsoft Excel.
 
 ---
 
