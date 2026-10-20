@@ -26,10 +26,10 @@ const path = require('path');
     format: 'A4',
     printBackground: true,
     margin: {
-        top: '12mm',
-        bottom: '12mm',
-        left: '14mm',
-        right: '14mm'
+        top: '8mm',
+        bottom: '8mm',
+        left: '12mm',
+        right: '12mm'
     }
   });
 

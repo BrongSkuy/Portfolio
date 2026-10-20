@@ -6,6 +6,15 @@
 ## PROFESSIONAL SUMMARY
 Mahasiswa Teknik Informatika semester akhir (IPK 3.7) dengan spesialisasi di bidang AI Prompt Engineering dan Vibe Coding. Memiliki pengalaman dalam merancang dan mengembangkan aplikasi secara end-to-end menggunakan Antigravity IDE. Terbiasa menerjemahkan kebutuhan logika bisnis menjadi instruksi AI yang efektif untuk pengembangan sistem yang cepat (No-Code/AI-Assisted Development). Memiliki ketelitian tinggi, pemahaman logika data yang kuat (Excel, Pivot, Data Visualization), dan siap berkontribusi dalam mempercepat inovasi digital di industri Teknologi Informasi.
 
+## WORK EXPERIENCE
+
+**Marketing merangkap Admin (Kontrak 3 Bulan)**
+*PT Dwi Tunggal Jaya Abadi* | 2024
+- Menjalankan aktivitas pemasaran dan sosialisasi program penempatan pekerja migran resmi (P3MI) serta pelatihan luar negeri LPK.
+- Memberikan layanan konsultasi dan informasi alur pendaftaran kepada calon tenaga kerja/kandidat magang secara profesional.
+- Bertanggung jawab atas pengelolaan berkas administrasi kandidat, mulai dari verifikasi identitas, paspor, rekam medis, hingga dokumen legalitas.
+- Melakukan pendataan, pembukuan arsip, dan rekapitulasi laporan operasional harian secara akurat menggunakan Microsoft Excel.
+
 ---
 
 ## PROJECTS & FREELANCE EXPERIENCE

@@ -6,8 +6,8 @@
 
 body {
     font-family: "Times New Roman", Times, serif;
-    font-size: 10pt;
-    line-height: 1.35;
+    font-size: 9.8pt;
+    line-height: 1.32;
     color: #000;
     background-color: #fff;
     max-width: 210mm;
@@ -16,19 +16,19 @@ body {
 
 .header {
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .header h1 {
-    font-size: 19pt;
+    font-size: 18pt;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
     letter-spacing: 0.5px;
 }
 
 .contact-info {
-    font-size: 9.5pt;
+    font-size: 9.2pt;
 }
 
 .contact-info a {
@@ -37,20 +37,20 @@ body {
 }
 
 section {
-    margin-bottom: 11px;
+    margin-bottom: 8px;
 }
 
 h2.section-title {
-    font-size: 10.5pt;
+    font-size: 10.2pt;
     font-weight: bold;
     text-transform: uppercase;
     border-bottom: 1px solid #000;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     padding-bottom: 1px;
 }
 
 .entry {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
 .entry-header {
@@ -58,33 +58,33 @@ h2.section-title {
     justify-content: space-between;
     font-weight: bold;
     margin-bottom: 1px;
-    font-size: 10pt;
+    font-size: 9.8pt;
 }
 
 .entry-subheader {
     display: flex;
     justify-content: space-between;
     font-style: italic;
-    margin-bottom: 3px;
-    font-size: 9.5pt;
+    margin-bottom: 2px;
+    font-size: 9.2pt;
 }
 
 p.summary-text {
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     text-align: justify;
 }
 
 ul {
-    padding-left: 18px;
-    margin-bottom: 3px;
+    padding-left: 17px;
+    margin-bottom: 2px;
 }
 
 li {
-    margin-bottom: 2px;
+    margin-bottom: 1.5px;
     text-align: left;
 }
 
 .skills-list p {
-    margin-bottom: 3px;
+    margin-bottom: 2px;
     text-align: left;
 }
