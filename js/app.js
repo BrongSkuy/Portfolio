@@ -96,7 +96,7 @@ function initProjects() {
 
     const filtered = category === 'all' 
       ? PORTFOLIO_DATA.projects 
-      : PORTFOLIO_DATA.projects.filter(p => p.category === category);
+      : PORTFOLIO_DATA.projects.filter(p => Array.isArray(p.category) ? p.category.includes(category) : p.category === category);
 
     filtered.forEach(project => {
       const card = document.createElement('article');
@@ -106,7 +106,7 @@ function initProjects() {
       const browserAddressHtml = project.liveUrl 
         ? `<a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="browser-address" style="text-decoration: none; color: inherit;" title="Buka Website Resmi">
             <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path></svg>
-            ${project.liveUrl.replace('https://', '')} ↗
+            ${project.liveUrl.replace(/^https?:\/\//, '')} ↗
           </a>`
         : `<div class="browser-address">
             <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path></svg>
@@ -142,7 +142,7 @@ function initProjects() {
             </button>
             ${project.liveUrl ? `
             <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-info" style="text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
-              Live Site
+              ${project.liveUrlLabel || 'Live Site'}
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
             </a>` : ''}
           </div>
@@ -249,10 +249,12 @@ function openProjectModal(projectId) {
 
   const highlightsHtml = project.highlights.map(h => `<li>${h}</li>`).join('');
   const tagsHtml = project.tags.map(t => `<span class="tag tag-info">${t}</span>`).join('');
+  const liveLabel = project.liveUrlLabel || 'Kunjungi Website Resmi';
+  const cleanUrl = project.liveUrl ? project.liveUrl.replace(/^https?:\/\//, '') : '';
   const liveActionHtml = project.liveUrl ? `
     <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border); display: flex; justify-content: flex-end;">
       <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
-        Kunjungi Website Resmi (${project.liveUrl.replace('https://', '')})
+        ${liveLabel} (${cleanUrl})
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
       </a>
     </div>

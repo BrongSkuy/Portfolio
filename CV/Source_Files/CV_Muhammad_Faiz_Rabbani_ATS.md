@@ -25,6 +25,12 @@ Mahasiswa Teknik Informatika semester akhir (IPK 3.7) dengan spesialisasi di bid
 - Mengembangkan aplikasi menggunakan pendekatan *Vibe Coding* dengan Antigravity IDE, mempercepat siklus pengembangan perangkat lunak secara signifikan.
 - Mengubah kebutuhan logika bisnis sekolah menjadi *prompt* AI yang efektif untuk menghasilkan kode yang efisien dan minim *bug*.
 
+**Full-Stack Web Developer (Academic Project)**
+*Sistem Kasir & Nota Pembelian POS - Toko Cendera Mata Indah* | 2026
+- Merancang dan membangun aplikasi kasir digital (POS) berbasis PHP Native dan JavaScript DOM dengan arsitektur single-file mandiri.
+- Mengembangkan engine kalkulasi real-time untuk diskon bertingkat member, DPP, dan faktur PPN 11% sesuai regulasi perpajakan.
+- Menyediakan mode cetak nota fisik resmi (@media print) yang bersih dan presisi untuk operasional toko ritel.
+
 **AI Automations Developer (Project)**
 *WhatsApp Bot Notifikasi DANA - UMKM*
 - Mengembangkan aplikasi otomatisasi bot pesan WhatsApp yang terintegrasi dengan notifikasi pembayaran DANA untuk membantu operasional UMKM.

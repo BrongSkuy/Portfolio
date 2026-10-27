@@ -6,6 +6,23 @@
 const PORTFOLIO_DATA = {
   projects: [
     {
+      id: "toko-cendera-mata",
+      category: ["ecommerce", "web"],
+      title: "Sistem Kasir POS & Nota Pembelian Digital",
+      subtitle: "TOKO CENDERA MATA INDAH (Studi Kasus UNPAM)",
+      summary: "Aplikasi kasir digital (POS) & generator faktur nota pembelian interaktif berbasis PHP Native dan JavaScript DOM dengan kalkulasi estimasi real-time, diskon berjenjang member, faktur PPN 11%, dan layout siap cetak (print-ready).",
+      image: "assets/img/projects/toko_cendera_mata_indah.png",
+      liveUrl: "http://127.0.0.1:8000/Muhammad_faiz_Rabbani.php",
+      liveUrlLabel: "Buka Sistem POS",
+      tags: ["PHP Native", "JavaScript DOM", "Single-File Architecture", "Live Calculation", "Tiered Discount", "PPN 11%", "Print Media CSS"],
+      highlights: [
+        "Membangun sistem kasir POS dan penerbitan nota transaksi resmi dengan arsitektur single-file PHP mandiri tanpa dependensi framework eksternal.",
+        "Mengembangkan fitur Live Payment Summary yang secara real-time menghitung subtotal, diskon berjenjang member (Non-Member 0%, Silver 2.5%, Gold 5%, Platinum 7.5%, Member Standar 10%), DPP, dan PPN 11%.",
+        "Menyediakan validasi formulir cerdas, penomoran nomor nota transaksi otomatis (readonly), serta styling cetak dokumen (@media print) yang bersih dan presisi."
+      ],
+      architecture: "Single-File Native PHP Architecture -> Real-Time DOM Event Listener -> Dynamic Item & Quantity Aggregator -> Tiered Discount & Tax Engine -> Print-Ready CSS Layout."
+    },
+    {
       id: "dwitunggal-portal",
       category: "web",
       title: "Corporate Web Portal & P3MI System",
